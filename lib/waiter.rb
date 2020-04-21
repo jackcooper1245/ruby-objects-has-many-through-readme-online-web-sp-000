@@ -24,4 +24,11 @@ def meals
   end
 end
 
+def best_tipper
+  best_tipped_meal = meals.max do |a, b|
+    a.tip <=> b.tip
+  end
+  best_tipped_meal.customer
+end
+
 end
