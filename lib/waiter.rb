@@ -10,7 +10,7 @@ def initialize(name, years_of_experience)
   @@all << self
 end
 
-def self.all 
+def self.all
   @@all 
 end
 
